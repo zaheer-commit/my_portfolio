@@ -89,8 +89,15 @@ body, html{
             flex-direction: column;
             justify-content: center;
 
+            h1{
+                color: $color-secondary;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                letter-spacing: 0.1em;
+                text-align: center;
+                font-weight: 300;
+            }
             p{
-                margin-top: 2em;
+                margin-top: -0.5em;
                 color: $color-secondary;
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 letter-spacing: 0.1em;
@@ -98,7 +105,7 @@ body, html{
             }
             div{
                 display: flex;
-                gap: 2em;
+                gap: 1em;
                 margin-top: 1em;
 
                 .Button_cta{
@@ -157,7 +164,6 @@ body, html{
                     border: 1px solid rgb(63, 75, 69);
                     cursor: pointer;
                     transition: transform 0.3s ease;
-                    margin-top: 0.5em;
                     font-size: 14px;
 
                      &:hover {
@@ -165,25 +171,46 @@ body, html{
                     }
                 }
                 p{
-                    text-align: justify;
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    font-size: 16px;
+                    font-size: 18px;
+                    letter-spacing: 0.05em;
                 }
             }
-            .Leftside{
-                h1{
-                    font-family: badoga;
-                    color: $color-dark;
-                    font-size: 16px;
-                    letter-spacing: 0.15em;
-                }
-                @media (max-width: 600px){
+            .Leftside {
+                display: flex;
+                align-items: center;
+
+                div {
                     display: flex;
                     justify-content: center;
-                    margin-top: -10px;
+                    align-items: center;
+                    margin: 0 auto;
+                    width: 33em;
+                    height: 19em;
+                    border-radius: 0.5em;
+                    gap: 1.5em;
+
+                    .prof{
+                        width: 7.8em;
+                        height: 7.3em;         
+                        border-radius: 50%;   
+                        object-fit: cover;
+                        box-shadow: 0 0 15px 0.5px rgba(2, 9, 5, 0.956);
+                        transition: all 0.5s ease;
+                    }
                     h1{
-                        font-size: 16px;
-                    }    
+                        font-size: 18px;
+                        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: 400;
+                    }
+                    h2{
+                        font-size: 18px;
+                        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: 400;
+                        transform: rotate(90deg);
+                        margin-left: -0.6em;
+                        margin-top: 1em;
+                    }
                 }
             }
         }

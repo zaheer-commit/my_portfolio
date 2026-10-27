@@ -3,7 +3,6 @@ import myself from '../../assets/images/myself.png'
 import arrow from '../../assets/icons/arrow.svg'
 import { useForm } from '@formspree/react';
 
-
 const Home = () => {
     const [state, handleSubmit] = useForm("moejbjgz"); 
 
@@ -19,23 +18,28 @@ const Home = () => {
                 </div>
                 
                 <div className="Buttom">
+                    <h1> Full Stack Developer </h1>
                     <p> I build clean, responsive websites with a focus on usability, performance, and thoughtful design. </p>
                     <div>
-                        <button className="Button_cta"> view my CV </button>
+                        <button className="Button_cta"> view Resume → </button>
+                        <button className="Button_cta"> Get in Touch ↗ </button>
                     </div>
                 </div>
             </div>
 
-            <div className="Home_About" id="about">
+            <div className="Home_About">
                 <div className="sides">
                     <div className="Leftside">
-                        <h1> Hi There, This is Zaheer </h1>
+                        <div>
+                            <img src={myself} alt="Zaheer Nazari" className="prof"/>
+                            <h1>Hi there, This is Zaheer</h1>
+                            <h2> : )</h2>
+                        </div>
                     </div>
                     <div className="Rightside">
                         <p> 
-                            I'm a Frontend Developer passionate about crafting modern, responsive, and visually refined web experiences. My technical toolkit includes HTML, CSS, JavaScript, TypeScript, React, Sass, Tailwind CSS, and Ant Design, supported by a solid foundation in general computing and digital tools.<br/>
-                            <br/>Beyond aesthetics, I value usability, maintainable code, thoughtful architecture, and meticulous attention to detail. I enjoy tackling challenges, exploring emerging technologies, and transforming ideas into practical, well-structured solutions.<br/>
-                            <br/>Committed to continuous learning and professional growth, I strive to refine my technical expertise, strengthen my problem-solving abilities, and contribute to meaningful projects that deliver intuitive, reliable, and engaging digital experiences.
+                            I'm a Frontend Developer focused on building modern, responsive, and visually appealing websites that combine great design with seamless user experiences. I work with HTML, CSS, JavaScript, TypeScript, React, Sass and Tailwind CSS to turn ideas into functional, user-friendly web interfaces.<br/>
+                            <br/>I value clean code, attention to detail, and maintainable solutions that meet both user needs and business goals. Passionate about continuous learning, I strive to create digital experiences that help businesses stand out and deliver lasting value.
                         </p>
                         <button> Let's Talk </button>
                     </div>
