@@ -2,6 +2,8 @@ import './Home.scss';
 import myself from '../../assets/images/myself.png'
 import arrow from '../../assets/icons/arrow.svg'
 import { useForm } from '@formspree/react';
+import github from '../../assets/images/github.png';
+import piano from '../../assets/images/piano.png';
 
 const Home = () => {
     const [state, handleSubmit] = useForm("moejbjgz"); 
@@ -44,6 +46,34 @@ const Home = () => {
                         <button> Let's Talk </button>
                     </div>
                 </div>
+            </div>
+
+            <div className="Home_Projecrts">
+                <div className="projectsinfo">
+                    <h1> My Projects </h1>
+                    <h2> Projects that bring ideas to life. </h2>
+                    <p> A showcase of my frontend projects, combining clean design and responsive user experiences. </p>
+                </div>
+                <div className="Projects">
+                    <div className="github">
+                        <img src={github} alt="github"/>
+                        <div>
+                            <h1> GitHub Portfolio </h1>
+                            <p> A collection of my frontend projects, showcasing my technical skills, clean code, and continuous growth in web development.</p>
+                        </div>
+                    </div>
+                    <div className="piano">
+                        <img src={piano} alt="github"/>
+                        <div>
+                            <h1> Piano — WordPress Website</h1>
+                            <p> A responsive piano store website built with WordPress and Elementor, featuring a clean layout and organized piano categories.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="more">
+                    <h1> More Projects Coming Soon... </h1>
+                </div>
+
             </div>
 
             <div className="Home_Skills">

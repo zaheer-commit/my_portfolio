@@ -215,6 +215,95 @@ body, html{
             }
         }
     }
+    &_Projecrts {
+        background-color: $color-primary;
+        display: flex;
+        flex-direction: column;
+        padding: 4em 0;
+        justify-content: center;
+        align-items: center;
+
+        .projectsinfo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height: 0.5em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            h1{
+                color: $color-light;
+                font-weight: 400;
+                font-size: 1em;
+            }
+            h2{
+                color: $color-light;
+                letter-spacing: 0.1em;
+                font-weight: bold;
+            }
+            p{
+                color:rgb(228, 228, 228);
+                margin-bottom: 3em;
+            }
+        }   
+        .Projects {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 3em;
+            max-width: $container-width;
+            flex-wrap: wrap;
+
+            .github, .piano {
+                flex: 1 1 280px;
+                max-width: 22em;
+                overflow: hidden;
+                border-radius: 1em;
+                background: rgba(255, 255, 255, 0.04);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                transition: transform 0.5s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-8px);
+                    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 17em;
+                    object-fit: cover;
+                    object-position: top center;
+                }
+                div {
+                    padding: 2em;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                    h1 {
+                        color: $color-light;
+                        font-size: 1rem;
+                        margin: 0 0 0.8em;
+                    }
+                    p {
+                        color: rgba(255, 255, 255, 0.7);
+                        font-size: 0.9rem;
+                        line-height: 1.8;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .more{
+            h1{
+                color: $color-light;
+                font-weight: 400;
+                font-size: 1em;
+                margin-top: 3em;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+    }   
     &_Skills{
         background-color: $color-light;
         display: flex;
