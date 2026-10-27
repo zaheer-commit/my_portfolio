@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom';
 import './Footer.scss';
-import github from '../../assets/icons/github.svg'
-import linkedin from '../../assets/icons/linkedin.svg'
-import instagram from '../../assets/icons/instagram.svg'
+import github from '../../assets/icons/github.svg';
+import linkedin from '../../assets/icons/linkedin.svg';
+import instagram from '../../assets/icons/instagram.svg';
 
 const Footer = () => {
   return (
@@ -10,15 +9,15 @@ const Footer = () => {
         <div className="footer_container">
 
             <ul className="footer_links">
-                <li> <Link to="/" > Home </Link> </li>
-                <li> <Link to="/about" > About me </Link> </li>
-                <li> <Link to="/projects" > Projects </Link> </li>
-                <li> <Link to="/projects"> Get in touch </Link> </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#getintouch">Get in touch</a></li>
             </ul>
 
-            <h1> Zaheer Nazari </h1> 
+            <h1> Zaheer Nazari </h1>
 
-            <h2 className="footer_contact"> Kabul AF | 
+            <h2 className="footer_contact"> Kabul AF |
                <a href="mailto:zaheer.kargar@gmail.com" target="_blank"> zaheer.kargar@gmail.com </a>
             </h2>
 

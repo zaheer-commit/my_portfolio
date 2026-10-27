@@ -1,7 +1,6 @@
 import './Home.scss';
 import myself from '../../assets/images/myself.png'
 import arrow from '../../assets/icons/arrow.svg'
-import {Link} from 'react-router-dom'
 import { useForm } from '@formspree/react';
 
 
@@ -9,7 +8,7 @@ const Home = () => {
     const [state, handleSubmit] = useForm("moejbjgz"); 
 
     return(
-        <section className="Home">
+        <section className="Home" id="home">
 
             <div className="Home_Container">
                 <div className="Above">
@@ -27,7 +26,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="Home_About">
+            <div className="Home_About" id="about">
                 <div className="sides">
                     <div className="Leftside">
                         <h1> Hi There, This is Zaheer </h1>
@@ -66,7 +65,9 @@ const Home = () => {
                 </div>
                 <div className="more_skills">
                      <ul>
-                        <li> <Link to="/" className="hover-underline" > Find more about me </Link> </li>
+                        <li>
+                            <a href="#about" className="hover-underline"> Find more about me </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -100,7 +101,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="Home_GetinTouch">
+            <div className="Home_GetinTouch" id="getintouch">
                 <div className="Sides">
                     <div className="LeftSide">
                         <h1> Get in touch! </h1>
