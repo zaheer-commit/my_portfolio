@@ -31,10 +31,7 @@ const router = createBrowserRouter(
         },
       ],
     },
-  ],
-  {
-    basename: "/my_portfolio",
-  }
+  ]
 );
 
 function App() {
