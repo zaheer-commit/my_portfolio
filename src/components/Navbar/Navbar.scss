@@ -2,6 +2,9 @@
 @font-face {
   font-family: 'badoga';
   src: url('../../assets/fonts/badoga.otf') format('opentype');
+
+  font-family: 'sans';
+  src: url('../../assets/fonts/iranian_sans.ttf') format('TrueType');
 }
 
 body, html{
@@ -9,7 +12,7 @@ body, html{
     margin: 0;
     overflow-x: hidden; 
     -webkit-text-size-adjust: 100%; 
-  text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 .navbar_hamburger {
@@ -29,22 +32,69 @@ body, html{
 .navbar {
   width: 100%;
   background-color: $color-light;
-  margin-bottom: 1px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: 0.3s;
 
+  &.scrolled{
+    background-color: #e7f6f2df;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 2px 15px #0000002e;
+  }
+  
   &_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: $container-width;
     margin: 0 auto;
-    padding: 2rem ;
+    padding: 1.1em ;
+  }
+
+  .the_name{
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+
+    .my_name {
+      text-decoration: none;
+      color: $color-text-on-light;
+      font-family: badoga;
+      font-size: 19px;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+    .language{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      border: none;
+      gap: 0.3em;
+      background-color: transparent;
+      padding: 0em 1.3em;
+      cursor: pointer;
+
+      b{
+        font-family: sans;
+        font-size: 16px;
+        font-weight: 100;
+      }
+      img{
+        width: 1.5em;
+        height: 1.5em;
+      }
+    }
   }
 
   &_links {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 3em;
+    align-items: center;
+    gap: 2.5em;
     margin: 0;
     padding: 0;
 
@@ -59,18 +109,8 @@ body, html{
       }
     }
   }
-
-  .my_name {
-    text-decoration: none;
-    color: $color-text-on-light;
-    font-family: badoga;
-    font-size: 19px;
-
-    &:hover {
-      color: $color-primary;
-    }
-  }
 }
+
 @media (max-width: 600px) {
   .navbar {
     &_container {

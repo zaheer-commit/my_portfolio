@@ -1,10 +1,17 @@
 @use '../../styles/variables' as *;
 
+body{
+  background-color: $color-light;
+}
 .layout {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
+  background-color: $color-light;
 
+  .layout_main {
+    padding-top: 4em;
+  }
   &_main {
     flex: 1;
     width: 100%;
